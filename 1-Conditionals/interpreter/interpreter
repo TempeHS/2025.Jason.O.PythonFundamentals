@@ -1,2 +1,20 @@
 def main():
-    equation = float(input("Enter your equation: "))
+    equation = input("Enter your equation: ")
+    (
+        x,
+        y,
+        z,
+    ) = equation.split(" ")
+    x_f = float(x)
+    x_z = float(y)
+
+    if y == "+":
+        print(x + z)
+    elif y == "-":
+        print(x - z)
+    elif y == "*":
+        print(x * z)
+    else y == "/":
+        print(x / z)
+
+main()
