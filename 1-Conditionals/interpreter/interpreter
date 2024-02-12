@@ -1,0 +1,2 @@
+def main():
+    equation = float(input("Enter your equation: "))
