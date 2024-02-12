@@ -4,9 +4,7 @@ def main():
 
     if file.endswith(".gif"):
         print("image/gif")
-    elif file.endswith(".jpg"):
-        print("image/jpeg")
-    elif file.endswith(".jpeg"):
+    elif file.endswith(".jpg" or ".jpeg"):
         print("image/jpeg")
     elif file.endswith(".png"):
         print("image/png")
