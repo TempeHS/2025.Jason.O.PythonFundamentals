@@ -5,16 +5,15 @@ def main():
         y,
         z,
     ) = equation.split(" ")
-    x_f = float(x)
-    x_z = float(y)
 
     if y == "+":
-        print(x + z)
+        print(float(x) + float(z))
     elif y == "-":
-        print(x - z)
+        print(float(x) - float(z))
     elif y == "*":
-        print(x * z)
-    else y == "/":
-        print(x / z)
+        print(float(x) * float(z))
+    else:
+        print(float(x) / float(z))
+
 
 main()
