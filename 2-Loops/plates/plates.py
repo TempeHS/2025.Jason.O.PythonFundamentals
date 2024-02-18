@@ -9,8 +9,22 @@ def main():
 def is_valid(s):
     if len(s) < 2 or len(s) > 6:
         return False
-    if not s.isalpha() and s.isalnum():
+    if s[0].isalpha() == False or s[1].isalpha() == False:
         return False
+
+    i = 0
+    while i < len(s):
+        if s[i].isalpha() == False:
+            if s[i] == "0":
+                return False
+            elif not s[i:].isdigit():
+                return False
+            else:
+                break
+        i += 1
+    for c in s:
+        if c in [".", " ", "!", "?", ","]:
+            return False
     else:
         return True
 
