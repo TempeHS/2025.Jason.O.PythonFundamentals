@@ -2,5 +2,16 @@ import inflect
 
 p = inflect.engine()
 
+names = []
+
 while True:
-    n = input("Name: ")
+    try:
+        n = input("Name: ")
+        names.append(n)
+
+    except EOFError:
+        print()
+        break
+
+output = p.join(names)
+print("Adieu, adieu, to " + output)
